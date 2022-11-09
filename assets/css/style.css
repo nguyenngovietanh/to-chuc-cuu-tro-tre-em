@@ -232,7 +232,7 @@ ol, ul {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .main-content-details h5 {
   font-weight: bold;
@@ -241,6 +241,7 @@ ol, ul {
   font-size: 18px;
 }
 .main-content-details p {
+  font-size: 18px;
   margin-bottom: 20px;
   color: #222221;
 }

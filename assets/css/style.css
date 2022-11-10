@@ -78,7 +78,7 @@ font-weight: 800;
 font-size: 15.5px;
 outline: none;
 border: none;
-background-color: #fff;
+background: #ffffff;
 cursor: pointer;
 display: flex;
 align-items: center;
@@ -96,6 +96,9 @@ transition: all 0.3s;
 #navbar ul li i {
 margin-left: 5px;
 font-size: 10px;
+}
+#navbar ul li:hover {
+  background: #f5f5f5;
 }
 #navbar ul li:hover > a, #navbar ul li:hover > i {
 color: #DA291C;
@@ -165,6 +168,7 @@ width: 520px;
 }
 #dropdown-develop {
 margin-left: 510px !important; 
+top: -10px;
 }
 #introduce, #develop, #job-world, #guide, #teacher {
 transition: all 0.3s;

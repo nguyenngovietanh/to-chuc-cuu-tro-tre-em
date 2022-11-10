@@ -203,6 +203,23 @@ ol, ul {
   width: 50px;
   text-align: center;
 }
+.social-media a:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.social-media a i {
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.social-media a:nth-child(2) i {
+  font-size: 25px;
+}
+.social-media a:hover i {
+  color: #DA291C;
+  transform: scale(1.1);
+}
 .main-content {
   width: 80%;
   margin-left: auto;

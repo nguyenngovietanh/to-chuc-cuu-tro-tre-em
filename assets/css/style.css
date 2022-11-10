@@ -29,151 +29,157 @@ body {
 
 /* header */
 .top-bar {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 2rem;
-    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .1);
-    background: #fff;
-    font-size: 110%;
-    z-index: 1000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+  box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .1);
+  background: #fff;
+  font-size: 110%;
+  z-index: 1000;
 }
 .top-bar .logo {
-  font-weight: 800;
-  text-decoration: none;
-  color: #1e0f3d;
-  display: flex;
-  align-items: center;
+font-weight: 800;
+text-decoration: none;
+color: #1e0f3d;
+display: flex;
+align-items: center;
 }
 #navbar {
-  z-index: 1000;
-  position: relative;
+z-index: 1000;
+position: relative;
 }
 #navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-  border: none;
-  padding: 0;
-  border-radius: 0;
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style: none;
+border: none;
+padding: 0;
+border-radius: 0;
 }
 #navbar ul li {
-  height: 80px;
-  display: flex;
-  align-items: center;
+height: 80px;
+display: flex;
+align-items: center;
+}
+#navbar ul li ul li {
+height: 70px;
 }
 #navbar ul li {
-  color: #1e0f3d;
-  transition: all 0.3s ease-in-out;
-  font-weight: 800;
-  font-size: 15.5px;
-  outline: none;
-  border: none;
-  background-color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+color: #1e0f3d;
+transition: all 0.3s ease-in-out;
+font-weight: 800;
+font-size: 15.5px;
+outline: none;
+border: none;
+background-color: #fff;
+cursor: pointer;
+display: flex;
+align-items: center;
 }
 #navbar ul li a {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
+font-family: 'Quicksand', sans-serif;
+font-weight: bold;
 }
 #navbar ul li a, #navbar ul li i {
-  text-decoration: none;
-  color: #222221;
-  cursor: pointer;
-  transition: all 0.3s;
+text-decoration: none;
+color: #222221;
+cursor: pointer;
+transition: all 0.3s;
 }
 #navbar ul li i {
-  margin-left: 5px;
-  font-size: 10px;
+margin-left: 5px;
+font-size: 10px;
 }
 #navbar ul li:hover > a, #navbar ul li:hover > i {
-  color: #DA291C;
+color: #DA291C;
 }
 #list {
-   margin-bottom: 0;
+ margin-bottom: 0;
 }
 #list li {
-  padding: 0.6rem;
+padding: 0.6rem;
 }
 #toggle {
-  display: none;
-  cursor: pointer;
-  color: #222221;
-  position: absolute;
-  font-size: 13px;
-  right: 2rem;
-  z-index: 100;
-  transform:rotate(0deg);
-  transition: all 1s ease-in-out;
+display: none;
+cursor: pointer;
+color: #222221;
+position: absolute;
+font-size: 13px;
+right: 2rem;
+z-index: 100;
+transform:rotate(0deg);
+transition: all 1s ease-in-out;
 }
 #toggle:hover {
-  transform: rotate(360deg);
+transform: rotate(360deg);
 } 
 .search-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: #DA291C;
-  border: none;
-  transition: all 0.3s;
+width: 40px;
+height: 40px;
+border-radius: 50px;
+background-color: #DA291C;
+border: none;
+transition: all 0.3s;
 }
 .search-btn a {
-  color: #ffffff;
+color: #ffffff;
 }
 .search-btn:hover {
-  background-color: #fa1100;
+background-color: #fa1100;
 }
 .search-btn:hover a {
-  color: #ffffff;
+color: #ffffff;
 }
 .logo-topbar {
-  position: relative;
-  height: 50px;
+position: relative;
+height: 50px;
 
 }
 .logo-topbar img {
-  height: 100%;
+height: 100%;
 }
 ol, ul {
-  padding-left: 0 !important;
+padding-left: 0 !important;
 }
 .dropdown-menu {
-  margin-top: 80px !important;
-  top: 0;
-  margin-left: -0.6rem !important;
-  position: relative;
+margin-top: 80px !important;
+top: 0;
+margin-left: -0.6rem !important;
+position: relative;
+}
+.dropdown-item {
+width: auto !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-  background-color: transparent !important;
+background-color: transparent !important;
 }
 #dropdown-introduce {
-  width: 500px;
+width: 520px;
 }
 #dropdown-develop {
-  margin-left: 490px !important; 
+margin-left: 510px !important; 
 }
 #introduce, #develop, #job-world, #guide, #teacher {
-  transition: all 0.3s;
+transition: all 0.3s;
 }
 #dropdown-introduce, #dropdown-develop, #dropdown-job-world,
 #dropdown-guide, #dropdown-teacher {
-  transition: all 0.3s !important;
-  opacity: 0;
-  display: none !important;
+transition: all 0.3s !important;
+opacity: 0;
+display: none !important;
 }
 #introduce:hover #dropdown-introduce, #develop:hover #dropdown-develop,
 #job-world:hover #dropdown-job-world, #guide:hover #dropdown-guide, #teacher:hover #dropdown-teacher {
-  opacity: 1;
-  display: block !important;
-  animation: fade_in_show 0.5s;
+opacity: 1;
+display: block !important;
+animation: fade_in_show 0.5s;
 }
 
 /* header */

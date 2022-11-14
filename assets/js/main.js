@@ -1,86 +1,45 @@
-const product = [
-    {
-        id: 1,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 2,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 3,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 4,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 5,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 6,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 7,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    },
-    {
-        id: 8,
-        image: "/images/blog/ajax-articles/marios-restaurant-thumb.jpg",
-        title: "",
-        description: "",
-        itemCategory: "",
-        itemTime: "",
-        UserPageVisits: "",
-    }
-]
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
 
-let perPage = 4;
-let currentPage = 1;
-let start = 0;
-let end = perPage;
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
 
-function renderProduct() {
-    html = "";
-    const content = product.map((item, index) => {
-        
-    })
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-130%";
+}
+// sidebar submenu open close js code
+let introduceArrow = document.querySelector("#introduce-arrow");
+introduceArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector("#more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jobArrow = document.querySelector("#job-arrow");
+jobArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+let guideArrow = document.querySelector("#guide-arrow");
+guideArrow.onclick = function() {
+ navLinks.classList.toggle("show4");
+}
+let teacherArrow = document.querySelector("#teacher-arrow");
+teacherArrow.onclick = function() {
+ navLinks.classList.toggle("show5");
 }

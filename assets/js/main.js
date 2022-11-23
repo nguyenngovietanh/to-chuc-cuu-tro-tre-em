@@ -20,26 +20,28 @@ menuOpenBtn.onclick = function() {
 navLinks.style.left = "0";
 }
 menuCloseBtn.onclick = function() {
-navLinks.style.left = "-130%";
+navLinks.style.left = "-100%";
 }
+
+
 // sidebar submenu open close js code
-let introduceArrow = document.querySelector("#introduce-arrow");
+let introduceArrow = document.querySelector(".introduce-arrow");
 introduceArrow.onclick = function() {
  navLinks.classList.toggle("show1");
 }
-let moreArrow = document.querySelector("#more-arrow");
+let moreArrow = document.querySelector(".more-arrow");
 moreArrow.onclick = function() {
  navLinks.classList.toggle("show2");
 }
-let jobArrow = document.querySelector("#job-arrow");
+let jobArrow = document.querySelector(".job-arrow");
 jobArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
-let guideArrow = document.querySelector("#guide-arrow");
+let guideArrow = document.querySelector(".guide-arrow");
 guideArrow.onclick = function() {
  navLinks.classList.toggle("show4");
 }
-let teacherArrow = document.querySelector("#teacher-arrow");
+let teacherArrow = document.querySelector(".teacher-arrow");
 teacherArrow.onclick = function() {
  navLinks.classList.toggle("show5");
 }

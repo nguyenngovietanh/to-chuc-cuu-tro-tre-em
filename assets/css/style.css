@@ -35,9 +35,9 @@ nav{
   width: 100%;
   height: 100%;
   height: 70px;
-  background: #DA291C;
+  background: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  z-index: 99;
+  z-index: 1000;
 }
 nav .navbar{
   height: 100%;
@@ -46,20 +46,7 @@ nav .navbar{
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  background: #ffffff;
   padding: 0 50px;
-}
-.navbar .logo {
-  height: 50px;
-}
-.sidebar-logo-box {
-  height: 40px;
-}
-.sidebar-logo-box img:last-child {
-  margin-left: 5px;
-}
-.navbar .logo img, .sidebar-logo-box img {
-  height: 100%;
 }
 nav .navbar .nav-links{
   line-height: 70px;
@@ -67,7 +54,6 @@ nav .navbar .nav-links{
 }
 nav .navbar .links{
   display: flex;
-  padding-left: 0;
 }
 nav .navbar .links li{
   position: relative;
@@ -75,108 +61,94 @@ nav .navbar .links li{
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  padding: 0 14px;
-  background: #ffffff;
-  transition: all 0.3s ease-in-out;
+  padding: 0 10px;
+  transition: all 0.3s;
 }
-nav .navbar .links li:hover {
-  background: rgb(223, 223, 223, 0.3);
-}
-nav .navbar .links li:hover > a {
-  color: #DA291C;
-}
-nav .navbar .links li a {
+nav .navbar .links li a{
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
   color: #222221;
   font-size: 15px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
 }
-nav .navbar .links li:hover > a {
-  color: #DA291C;
-}
-.links li:hover .introduce-arrow,
-.links li:hover .job-arrow,
-.links li:hover .guide-arrow,
-.links li:hover .teacher-arrow
- {
-  transform: rotate(180deg);
-}
-nav .navbar .links li .arrow {
+nav .navbar .links li .arrow{
   height: 100%;
-  width: 22px;
+  width: 18px;
   line-height: 70px;
   text-align: center;
   display: inline-block;
   color: #222221;
   transition: all 0.3s ease;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-nav .navbar .links li:hover > .arrow {
-  color: #DA291C;
 }
 nav .navbar .links li .sub-menu{
   position: absolute;
   top: 70px;
   left: 0;
-  line-height: 70px;
+  padding-left: 0;
+  line-height: 60px;
   background: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
   display: none;
   z-index: 2;
-  padding-left: 0;
 }
 nav .navbar .links li:hover .introduce-sub-menu,
 nav .navbar .links li:hover .job-sub-menu,
 nav .navbar .links li:hover .guide-sub-menu,
-nav .navbar .links li:hover .teacher-sub-menu {
+nav .navbar .links li:hover .teacher-sub-menu{
   display: block;
 }
 .navbar .links li .sub-menu li{
-  padding: 0 14px;
+  padding: 0 12px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  height: 70px;
-  line-height: 70px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.navbar .links li .sub-menu > a {
+nav .navbar .links li:hover > i, 
+.navbar .links li .sub-menu li:hover > i,
+.navbar .links li .sub-menu li:hover > span i {
+  transition: all 0.3s;
+}
+nav .navbar .links li:hover, .navbar .links li .sub-menu li:hover {
+  background: rgba(216, 216, 216, 0.35);
+}
+nav .navbar .links li:hover > a, 
+.navbar .links li .sub-menu li:hover > a,
+.navbar .links li .sub-menu li:hover > span a,
+nav .navbar .links li:hover > i, 
+.navbar .links li .sub-menu li:hover > i,
+.navbar .links li .sub-menu li:hover > span i {
+  color: #DA291C;
+}
+.navbar .links li .sub-menu a{
   color: #222221;
   font-size: 15px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  font-weight: 700;
 }
-.navbar .links li .sub-menu > a:hover {
-  color: #DA291C;
+.navbar .links li .sub-menu .more-arrow{
+  line-height: 40px;
 }
-.more span {
-  display: contents;
-}
-.navbar .links li .introduce-sub-menu .more .more-arrow,
-.navbar .links li .introduce-sub-menu .more a {
-  line-height: 70px;
-  transition: all 0.3s ease-in-out;
-}
-.navbar .links li .introduce-sub-menu > .more:hover .more-arrow,
-.navbar .links li .introduce-sub-menu > .more:hover .more-li {
-  color: #DA291C;
-}
-.navbar .links li .sub-menu .more-sub-menu {
+.navbar .links li .sub-menu .more-sub-menu{
   position: absolute;
   top: 0;
   left: 100%;
-  border-radius: 0 4px 4px 4px;
   z-index: 1;
   display: none;
+}
+.links {
+  padding-left: 0;
 }
 .links li .sub-menu .more:hover .more-sub-menu{
   display: block;
 }
+.more span {
+  display: contents;
+}
 .navbar .search-box{
   position: relative;
-   height: 40px;
+  height: 40px;
   width: 40px;
   background: #DA291C;
   border-radius: 50px;
@@ -187,7 +159,7 @@ nav .navbar .links li:hover .teacher-sub-menu {
   width: 100%;
   line-height: 40px;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
@@ -199,7 +171,7 @@ nav .navbar .links li:hover .teacher-sub-menu {
   top: 80px;
   height: 60px;
   width: 300px;
-  background: #3E8DA8;
+  background: #DA291C;
   border-radius: 6px;
   opacity: 0;
   pointer-events: none;
@@ -233,6 +205,19 @@ nav .navbar .links li:hover .teacher-sub-menu {
   padding: 0 15px;
   font-size: 16px;
   border: none;
+}
+.navbar .logo {
+  height: 50px;
+  display: flex;
+}
+.sidebar-logo-box {
+  height: 40px;
+}
+.logo img:last-child, .sidebar-logo-box img:last-child {
+  margin-left: 5px;
+}
+.navbar .logo img, .sidebar-logo-box img {
+  height: 100%;
 }
 .navbar .nav-links .sidebar-logo{
   display: none;
@@ -391,10 +376,19 @@ footer {
   padding-left: 45px;
 }
 
+@media only screen and (max-width: 1280px) {
+  nav .navbar {
+    padding: 0 30px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   /* 1024 header start */
+  nav .navbar .links li .arrow {
+    width: 15px;
+    font-size: 12px;
+  }
   nav .navbar {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   .navbar .logo {
     height: 35px;
@@ -402,7 +396,7 @@ footer {
   .navbar .logo img:last-child {
     margin-left: 6px;
   }
-  nav .navbar .links li a {
+  nav .navbar .links li a, .navbar .links li .sub-menu a {
     font-size: 13px;
   }
   nav .navbar .links li {
@@ -419,6 +413,9 @@ footer {
   .header h1 {
     font-size: 30px;
     line-height: 45px;
+  }
+  .navbar .search-box .input-box {
+    right: calc(100% - 35px);
   }
   /* 1024 header end */
 
@@ -452,7 +449,7 @@ footer {
   /* 920 header start */
   nav .navbar{
     max-width: 100%;
-    padding: 0 12px;
+    padding: 0 15px;
   }
   .navbar .logo img:last-child {
     margin-left: 3px;
@@ -465,7 +462,7 @@ footer {
     white-space: nowrap;
   }
   nav .navbar .links li a{
-    font-size: 12px;
+    font-size: 11.7px;
   }
   nav .navbar .links li .arrow {
     width: 18px;
@@ -486,6 +483,7 @@ footer {
     margin-right: 15px;
   }
   /* 920 header end */
+
   .main-content h2 {
     font-size: 28px;
     margin-bottom: 22px;
@@ -530,7 +528,7 @@ footer {
     background:  #ffffff;
     line-height: 40px;
     padding: 0 0 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: all 0.5s ease;
     z-index: 1000;
     overflow: scroll;
@@ -540,7 +538,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    padding-left: 30px;
+    padding-left: 15px;
     background: rgba(201, 201, 201, 0.3);
   }
   .sidebar-logo .logo-name{
@@ -555,7 +553,7 @@ footer {
     cursor: pointer;
   }
   .sidebar-logo i {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   nav .navbar .links{
     display: block;
@@ -567,7 +565,11 @@ footer {
   nav .navbar .links li{
       display: block;
       line-height: 70px;
-    }
+      padding: 0 15px;
+  }
+  nav .navbar .links li a {
+    font-size: 14px;
+  }
   nav .navbar .links li .sub-menu{
     position: relative;
     top: 0;
@@ -768,6 +770,10 @@ footer {
     line-height: 30px;
     font-size: 14px;
   }
+  nav .navbar .nav-links {
+    max-width: 100%;
+    box-shadow: none;
+  }
   .header {
     height: 320px;
   }
@@ -838,6 +844,25 @@ footer {
 }
 @media only screen and (max-width:420px) {
   /* header 420 start */
+  .navbar .nav-links .sidebar-logo {
+    padding-left: 10px;
+  }
+  .navbar .nav-links .sidebar-logo {
+    padding-left: 10px;
+  }
+  nav .navbar .links li {
+    padding: 0 10px;
+    line-height: 50px;
+  }
+  nav .navbar .links li .arrow {
+    width: 10px;
+  }
+  .navbar .links li .sub-menu li {
+    padding: 0 5px;
+  }
+  .sidebar-logo i {
+    padding-right: 10px;
+  }
   .header {
     height: 250px;
   }
@@ -859,7 +884,7 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
   } 
-  /* header 420 start */
+  /* header 420 end */
   .main-content h2 {
     margin-top: 35px;
   }
@@ -887,4 +912,17 @@ footer {
     font-size: 11px;
   }
   /* footer 420 end */
+}
+@media only screen and (max-width:390px) {
+  nav .navbar .links li a, .navbar .links li .sub-menu a {
+    font-size: 12px;
+  }
+  nav .navbar .links li .arrow {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width:375px) {
+  nav .navbar .links li {
+    padding: 0 5px;
+  }
 }

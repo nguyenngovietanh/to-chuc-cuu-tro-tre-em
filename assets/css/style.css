@@ -728,6 +728,10 @@ footer {
   .social-media a i {
     font-size: 25px;
   }
+  .social-media a:nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   .social-media a:nth-child(2) i {
     font-size: 22px;
   }
@@ -830,6 +834,10 @@ footer {
   }
   .social-media a i {
     font-size: 20px;
+  }
+  .social-media a:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .social-media a:nth-child(2) i {
     font-size: 18px;
